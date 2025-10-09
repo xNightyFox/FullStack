@@ -1,0 +1,63 @@
+p{
+    color: slateblue;
+    padding-inline: 5px;
+    margin: 0%;
+}
+
+a{
+    color: slateblue;
+}
+
+img{
+    padding-inline: 5px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.centralizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 0%x;
+}
+
+#nomargin {
+    margin: 0%;
+}
+
+#box {
+    border: 5px black;
+}
+
+#box_roxo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: blueviolet;
+    width: 115px;
+    height: 115px;
+}
+
+#box_roxo p{
+    color: white;
+    padding: 0%;
+    margin: 5px;
+}
+
+#At{
+    font-size: large;
+}
+
+#Fr{
+    font-size: 20pt;
+}
