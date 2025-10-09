@@ -1,0 +1,116 @@
+body{
+    background-color: whitesmoke;
+    margin-left: 10%;
+}
+
+div{
+    display: flex;
+    flex-direction: row;
+    margin-inline: 5px;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.centralizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preto{
+    color: black;
+}
+
+.cinza{
+    color: gray;
+}
+
+.branco{
+    color: white;
+}
+
+.azul{
+    color: aqua;
+}
+
+#fonte8{
+    font-size: 8pt;
+}
+
+.produtos div{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-around;
+}
+
+#menuup{
+    justify-content: space-around;
+    color: gray;
+    font-size: 10pt;
+    margin-inline: 200px;
+}
+
+#titulo{
+    font-size: 16pt;
+}
+
+
+#box_branco{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+#box_branco_pessoa{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 5px;
+    width: 343px;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+#box_preto{
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    border-radius: 25px;
+    padding-top: 20px;
+}
+.final {
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    width: 180px;
+    height: 150px;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#tamanho{
+    margin: 0;
+}
+
+#menudown1{
+    border-top: 1px solid gray;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: gray;
+}
+
+#menudown2{
+    justify-content: space-between;
+    margin-top:10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: gray;
+}
