@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Blazer 🚀</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background: #000011;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    #menu {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+
+    button {
+      background: #222;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      background: radial-gradient(circle at center, #000022, #000010);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="menu">
+    <button id="startBtn">Iniciar Jogo</button>
+    <button id="fullscreenBtn">Tela Cheia</button>
+  </div>
+
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+  <!-- script é carregado por último para garantir que todos os elementos existam -->
+  <script src="game.js"></script>
+
+  <!-- Adicionamos aqui o mesmo controle de tela cheia testado -->
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const fullscreenBtn = document.getElementById("fullscreenBtn");
+
+    // Atalho com tecla F
+    document.addEventListener("keydown", (e) => {
+      if (e.key.toLowerCase() === "f") toggleFullScreen();
+    });
+
+    fullscreenBtn.addEventListener("click", toggleFullScreen);
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        canvas.requestFullscreen()
+          .then(() => ajustarCanvas())
+          .catch(err => console.error("Erro ao entrar em tela cheia:", err));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    function ajustarCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener("resize", ajustarCanvas);
+  </script>
+</body>
+</html>

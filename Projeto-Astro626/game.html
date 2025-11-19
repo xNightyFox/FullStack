@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌌 Star Blazer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #000011;
+      color: white;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0b0c2a;
+      padding: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00b4ff;
+    }
+
+    nav a {
+      color: #00eaff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    #gameCanvas {
+      display: block;
+      margin: 20px auto;
+      background-color: #000011;
+      border: 2px solid #1e2a78;
+      border-radius: 10px;
+    }
+
+    .botao {
+      background-color: #00b4ff;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #0088cc;
+    }
+
+    footer {
+      background-color: #0b0c2a;
+      padding: 10px;
+      color: #ccc;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🌌 Star Blazer</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="devs.html">Desenvolvedores</a>
+      <a href="game.html">Jogar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Prepare-se para a Batalha!</h2>
+    <p>Use as setas para mover e o clique do mouse para atirar.<br>Derrote os asteroides e evolua seus poderes!</p>
+
+    <!-- Canvas do jogo -->
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+    <!-- Botões -->
+    <div>
+      <button id="startBtn" class="botao">Iniciar Jogo</button>
+      <button id="fullscreenBtn" class="botao">Tela Cheia</button>
+    </div>
+  </main>
+
+  <footer>
+    <p> Nighty Fox — 2025</p>
+  </footer>
+
+  <!-- Importa o script DO JOGO no final -->
+  <script src="js/game.js"></script>
+</body>
+</html>
