@@ -1,0 +1,42 @@
+/*Tags*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: #333;
+}
+/*Menu*/
+nav {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+nav a {
+    
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+/*PseudoClasse*/
+nav a:hover {
+    color: blue;
+}
+/*Tabela*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+/*Classe*/
+.tabela {
+    background-color: #f0f0f0;
+}
+/*ID*/
+#titulo-principal {
+    text-transform: uppercase;
+}
